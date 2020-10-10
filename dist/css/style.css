@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,200&family=Raleway:wght@400;700&display=swap");
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-grey: #303841; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  html *,
+  html *::before,
+  html *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0; }
+  html body {
+    font-family: Poppins, sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    color: var(--main-white); }
+    html body nav li {
+      list-style: none; }
+    html body a {
+      color: var(--main-white);
+      text-decoration: none; }
+    html body #navbar {
+      background: var(--main-red);
+      box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+      display: flex;
+      justify-content: flex-end;
+      position: fixed;
+      width: 100%;
+      padding: 0 2rem; }
+      @media only screen and (max-width: 44.6875em) {
+        html body #navbar {
+          justify-content: center; } }
+      html body #navbar a {
+        display: block;
+        padding: 2rem; }
+        html body #navbar a:hover {
+          background-color: var(--main-blue); }
+    html body #welcome-section {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #000;
+      background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); }
+      html body #welcome-section h1 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 6rem;
+        text-align: center; }
+      html body #welcome-section span {
+        font-size: 3rem;
+        font-weight: 200;
+        font-style: italic;
+        color: var(--main-red); }
+    html body #projects {
+      background: var(--main-blue);
+      padding: 10rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6rem; }
+      @media only screen and (max-width: 44.6875em) {
+        html body #projects {
+          padding: 6rem 1rem; } }
+      html body #projects h2 {
+        font-size: 4.2rem;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        text-align: center;
+        border-bottom: 0.2rem solid var(--main-white);
+        padding: 0 4rem; }
+        @media only screen and (max-width: 44.6875em) {
+          html body #projects h2 {
+            font-size: 3.5rem;
+            padding: 0; } }
+      html body #projects .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
+        max-width: 128rem; }
+        @media only screen and (max-width: 67.1875em) {
+          html body #projects .projects-grid {
+            grid-template-columns: repeat(2, 1fr); } }
+        @media only screen and (max-width: 44.6875em) {
+          html body #projects .projects-grid {
+            grid-template-columns: 1fr; } }
+        html body #projects .projects-grid a {
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background: var(--main-grey);
+          box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+          border-radius: 2px; }
+          html body #projects .projects-grid a img {
+            width: 100%; }
+          html body #projects .projects-grid a span {
+            font-size: 2rem;
+            padding: 1rem; }
+            html body #projects .projects-grid a span::before {
+              content: '<';
+              color: #ff7f50;
+              opacity: 0;
+              transition: opacity 0.3s ease-out; }
+            html body #projects .projects-grid a span::after {
+              content: '/>';
+              color: #ff7f50;
+              opacity: 0;
+              transition: opacity 0.3s ease-out; }
+          html body #projects .projects-grid a:hover span::before,
+          html body #projects .projects-grid a:hover span::after {
+            opacity: 1; }
+      html body #projects .btn {
+        background: var(--main-grey);
+        padding: 1rem 2rem;
+        transition: background .3s ease-out;
+        border-radius: 2px; }
+        html body #projects .btn:hover {
+          background: var(--main-red); }
+    html body #contact {
+      background: var(--main-grey);
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 2rem; }
+      html body #contact h2 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 6rem;
+        text-align: center; }
+        @media only screen and (max-width: 44.6875em) {
+          html body #contact h2 {
+            font-size: 4rem; } }
+      html body #contact span {
+        font-style: italic; }
+      html body #contact .contact-links {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 4rem;
+        margin-top: 4rem; }
+        html body #contact .contact-links a {
+          padding: 1rem 0;
+          font-size: 2.4rem;
+          text-shadow: 2px 2px 1px #1f1f1f;
+          transition: transform 0.3s ease-out; }
+          html body #contact .contact-links a:hover {
+            transform: translateY(8px); }
+    html body footer {
+      background: var(--main-grey);
+      border-top: 0.4rem solid var(--main-red);
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 4rem;
+      font-weight: 300; }
+      html body footer span a {
+        white-space: nowrap; }
+      @media only screen and (max-width: 44.6875em) {
+        html body footer {
+          flex-direction: column;
+          text-align: center; } }
