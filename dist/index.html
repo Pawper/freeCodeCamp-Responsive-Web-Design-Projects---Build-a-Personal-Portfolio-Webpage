@@ -1,64 +1,72 @@
 <!DOCTYPE html>
-<!-- lang attribute helps search engines return language specific results, and it is also used by screen readers that switch language profiles to provide the correct accent and pronunciation. Also used for hyphenation via CSS -->
 <html lang="en">
-<!-- SEO cheat sheet https://learn-the-web.algonquindesign.ca/topics/seo-cheat-sheet/ -->
 <!-- HTML Validator https://validator.w3.org/#validate_by_input -->
 
 <head>
-  <!-- For compatibility -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <!-- Every html page must have a title! Use · as a separater. -->
-  <title>FCC: Personal Portfolio</title>
-
-  <!-- Robots meta tags https://developers.google.com/search/reference/robots_meta_tag -->
-  <!-- Remove if you want the site to be crawled -->
+  <title>freeCodeCamp Projects</title>
   <meta name="robots" content="NOINDEX, NOFOLLOW">
 
-  <!-- Links -->
-  <!-- CSS -->
+  <!-- Stylesheets -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 
 <body>
-  <nav id="navbar">
-    <li><a href="#welcome-section">About</a></li>
-    <li><a href="#projects">Work</a></li>
-    <li><a href="#contact">Contact</a></li>
+  <!-- USER STORY 6 - #navbar -->
+  <nav id="navbar" class="navbar">
+    <span class="heading">Phillip Wessels</span>
+    <!-- USER STORY 7 - a href="#" -->
+    <div class="navbar__links">
+      <a href="#welcome-section">About</a>
+      <a href="#projects">Work</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
-  <section id="welcome-section">
-    <h1>Hey I am Mimic</h1>
-    <span>a web developer</span>
+  <!-- USER STORY 1 - #welcome-section -->
+  <section id="welcome-section" class="secondary">
+      <img src="img/pwessels.jpg" alt="" class="headshot">
+      <!-- USER STORY 2 - h1 -->
+      <h1 class="title">Phillip Wessels</h1>
+      <ul>
+        <li class="subheading">Web Developer</li>
+        <li class="subheading">Designer</li>
+        <li class="subheading">Artist</li>
+      </ul>
+    <p><span class="hello">Hello world!</span> I created this page for the freeCodeCamp portfolio project, using it to showcase the other freeCodeCamp projects I have designed. The designs are original except where for each project's requirements. I have left the testing script in each project (including this portfolio project) so that you can see the tests and how they are passing. The requirements are also clearly labeled via comments in the code.</p>
   </section>
-  <section id="projects">
-    <h2>These are some of my projects</h2>
+  <!-- USER STORY 3 - #projects -->
+  <section id="projects" class="primary">
+    <i class="fab fa-free-code-camp fcc-icon"></i>
+    <h2>freeCodeCamp Projects</h2>
     <div class="projects-grid">
+      <!-- USER STORY 4 - .project-tile -->
+      <!-- USER STORY 5 - a -->
       <a href="#" class="project-tile">
-        <img src="img/tribute.png" alt="project">
+        <img src="img/tribute.png" alt="">
         <span class="project-title">Tribute Page</span>
       </a>
       <a href="#" class="project-tile">
-        <img src="img/survey.png" alt="project">
+        <img src="img/survey.png" alt="">
         <span class="project-title">Survey Form</span>
       </a>
       <a href="#" class="project-tile">
-        <img src="img/product.png" alt="project">
+        <img src="img/product.png" alt="">
         <span class="project-title">Product Landing Page</span>
       </a>
       <a href="#" class="project-tile">
-        <img src="img/techdoc.png" alt="project">
+        <img src="img/techdoc.png" alt="">
         <span class="project-title"> Documentation Page</span>
       </a>
     </div>
-    <a href="https://www.freecodecamp.org/pawper" class="btn" target="_blank">Show all <i class="fas fa-chevron-right"></i></a>
   </section>
-  <section id="contact">
-    <h2>Let's work together...</h2>
-    <span>How do you take your coffee?</span>
+  <section id="contact" class="secondary">
+    <h2 class="heading">Want to chat?</h2>
+    <span class="subheading">Feel free to reach out.</span>
     <nav class="contact-links">
+      <!-- USER STORY 8 - #profile-link -->
       <a id="profile-link" href="https://www.freecodecamp.org/pawper" target="_blank"><i class="fab fa-free-code-camp"></i> freeCodeCamp</a>
       <a href="https://github.com/Pawper" target="_blank"><i class="fab fa-github"></i> Github</a>
       <a href="https://twitter.com/pawper" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
@@ -66,10 +74,10 @@
   </section>
 
   <footer>
-    <span>**This is just a fake portfolio. All the projects and cotact details given are not real.</span>
-    <span>&copy; Created for <a href="https://www.freecodecamp.com/" target="_blank">freeCodeCamp <i class="fab fa-free-code-camp"></i></a></span>
+    <span>Created for <a href="https://www.freecodecamp.com/" target="_blank">freeCodeCamp <i class="fab fa-free-code-camp"></i></a></span>
   </footer>
-  <!-- Put scripts down here so HTML render isn't stopped to load JS -->
+
+  <!-- freeCodeCamp testing script -->
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
