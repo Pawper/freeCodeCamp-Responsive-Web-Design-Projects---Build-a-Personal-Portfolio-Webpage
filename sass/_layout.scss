@@ -196,8 +196,8 @@ section {
     text-align: center;
 
     img {
-      width: 100%;
       background: #444;
+      object-fit: cover;
       height: 12rem;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
