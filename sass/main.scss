@@ -20,6 +20,7 @@
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  place-content: center;
   gap: 2rem;
 
   // USER STORY 9 - min 1 media query
