@@ -64,11 +64,12 @@ section {
   z-index: 1;
   padding-top: 8rem;
   padding-bottom: 10rem;
-
+  
   &:first-of-type {
     margin-top: 6.75rem;
     padding-top: 15rem;
     padding-bottom: 10rem;
+    overflow-x: hidden;
 
     p {
       background: $color-secondary-2-2;
@@ -198,7 +199,7 @@ section {
     img {
       background: #444;
       object-fit: cover;
-      height: 12rem;
+      height: 13rem;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
     }
